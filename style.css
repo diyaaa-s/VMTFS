@@ -22,7 +22,7 @@ a:hover {
   color: peachpuff;
 }
 
-/* Header Styles */
+/* Header Styles */      
 header {
   background-color: #12296c;
   color: rgb(236, 94, 11);
@@ -146,6 +146,17 @@ header nav ul.menu .dropdown-menu li a:hover {
   width: 50%;
   height: 50%;
 }
+
+.sensex-widget {
+  max-width: 300px;
+  margin: 10px auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+        
 
 
 /* Footer Styles */
@@ -654,4 +665,23 @@ button:hover {
 
 .footer-column  {
   background-color : #1e1e1e
+}
+
+/* Responsive Menu */
+nav ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav ul.menu li {
+  margin: 0 10px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
 }
