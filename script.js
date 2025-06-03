@@ -21,3 +21,30 @@ function showSlides() {
 window.onload = function () {
   showSlides();
 };
+
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+const body = document.body;
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+  body.classList.toggle("no-scroll");
+});
+
+// Close menu after clicking a menu link
+document.querySelectorAll(".menu li a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      menu.classList.remove("show");
+      body.classList.remove("no-scroll");
+    }
+  });
+});
+
+// Optional: Close menu on resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    menu.classList.remove("show");
+    body.classList.remove("no-scroll");
+  }
+});
