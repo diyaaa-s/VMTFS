@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VM Technology and Financial Services</title>
+
+   
+     <link rel="icon" href="VMTFS Logo.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VM Technology and Financial Services</title>
+  <link rel="icon" href="VMTFS Logo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <style>
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #f0f4f8;
+    color: #333;
+  }
+
+  /* Application Form Section */
+  .application-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #e0f2ff, #f5fcff);
+  }
+
+  .application-form form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1000px; /* Full width on large screens */
+  }
+
+  .application-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #004aad;
+    font-size: 2rem;
+  }
+
+  .application-form label {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .application-form input,
+  .application-form select,
+  .application-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+  }
+
+  .application-form textarea {
+    resize: vertical;
+  }
+
+  .application-form button {
+    margin-top: 1.8rem;
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #004aad;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .application-form button:hover {
+    background-color: #003080;
+  }
+
+  @media (max-width: 768px) {
+    .application-form form {
+      padding: 1.5rem;
+      max-width: 100%;
+    }
+
+    .application-form h2 {
+      font-size: 1.5rem;
+    }
+    .application-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff; /* Changed from gradient to white */
+}
+
+
+
+  }
+</style>
+
+
+</head>
+<body>
+
+  <!-- Header Section -->
+    <header>
+      <div class="logo">
+    <img src="VMTFS Logo.jpg" alt="Logo" />
+    <div>
+      <h1 style="color: #f3eded;">VM Technology and Financial Services</h1>
+    </div>
+  </div>
+      <nav>
+
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="Career-dropdown">
+          <a href="career.html">Careers</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Internships</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Application Form Section -->
+<section class="application-form" id="apply">
+  <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+    <!-- Company logo and name inside the form -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <img src="vmtfs logo.jpg" alt="VMTFS Logo" style="max-height: 80px; margin-bottom: 10px;" />
+      <h2 style="margin-bottom: 0; color: #004aad;">VM Technology and Financial Services</h2>
+      <p style="font-size: 0.95rem;">Internship / Job Application Form</p>
+    </div>
+
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full_name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="role">Role Type:</label>
+    <select id="role" name="role" required>
+      <option value="">Select</option>
+      <option value="internship">Internship</option>
+      <option value="job">Job</option>
+    </select>
+
+    <label for="domain">Domain:</label>
+    <select id="domain" name="domain" required>
+      <option value="">Select a domain</option>
+    </select>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+
+    <label for="message">Why should we consider you?</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-column contact-info">
+      <p >©️ 2024 VM Technology and Financial Services. All Rights Reserved.</p>
+      <p>Contact Us: <a href=" support@vmtechfin.com"> support@vmtechfin.com</a></p>
+      <p>Phone: ‪+91 8660768419/ 7259260117‬</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Technical</h4>
+      <ul>
+        <li>Training</li>
+        <li>Cloud Computing</li>
+        <li>DevOps</li>
+        <li>Security</li>
+        <li>Software Development</li>
+        <li>Cybersecurity</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Financial</h4>
+      <ul>
+        <li>Stock Broking</li>
+        <li>Algo Trading</li>
+        <li>Mutual Funds</li>
+        <li>Insurance</li>
+        <li>Tax Planning</li>
+        <li>Financial Planning</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 style=" color:#ec5e0b">Follow Us</h4>
+      <div class="social-icons">
+  <a href="https://instagram.com/YOUR_USERNAME" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://facebook.com/YOUR_USERNAME" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/YOUR_USERNAME" target="_blank" class="icon twitter"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://youtube.com/YOUR_CHANNEL" target="_blank" class="icon youtube"><i class="fab fa-youtube"></i></a>
+  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+
+  </div>
+</footer>
+  <script>
+  const roleSelect = document.getElementById('role');
+  const domainSelect = document.getElementById('domain');
+
+  const domainOptions = {
+    internship: [
+      'Cloud Computing', 'DevOps', 'Security', 'Programming', 'Data Science',
+      'Linux', 'Web App', 'Mobile App', 'SEO, SEM, SMM',
+      'Email & E-commerce Marketing', 'Adwords', 'Lead Generation'
+    ],
+    job: [
+      'Cloud Computing', 'DevOps', 'Security', 'Programming', 'Data Science',
+      'Linux', 'Web App', 'Mobile App', 'SEO, SEM, SMM',
+      'Financial Planning', 'Stock Broking', 'Equity', 'Derivatives',
+      'Commodity', 'Currency', 'Algo Trading', 'Mutual Funds',
+      'Insurance', 'Tax Planning', 'Corporate FD & Bonds'
+    ]
+  };
+
+  roleSelect.addEventListener('change', function () {
+    const selectedRole = this.value;
+    domainSelect.innerHTML = '<option value="">Select a domain</option>';
+
+    if (domainOptions[selectedRole]) {
+      domainOptions[selectedRole].forEach(domain => {
+        const option = document.createElement('option');
+        option.value = domain.toLowerCase().replace(/\s+/g, '-');
+        option.textContent = domain;
+        domainSelect.appendChild(option);
+      });
+    }
+  });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/683d3e0958ead6190c5cbb21/1isnjklgf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
